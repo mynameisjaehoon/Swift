@@ -48,7 +48,7 @@
 
 
 ## [weak self]
-- 약한 참조(weak reference)
+- 약한 참조(weak reference) 
 - 두 가지 이상의 객체가 서로에 대한 강한 참조를 가지면 메모리 릭이 발생한다. 이를 해결하기 위해 약한 참조를 사용한다.
 - weak reference 의 특징
     - 인스턴스를 strong하게 유지하지 않는다. weak reference가 참조를 유지 중이여도 참조하고 있는 것이 해제될 수 있다.
