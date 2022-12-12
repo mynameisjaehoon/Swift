@@ -43,5 +43,24 @@
 
 ### Sync / Async
 - 동기 (Sync)
-    - 
+    - 스레드로 보낸 작업이 완료될 때까지 다른 작업을 시작하지 않는 것.
 - 비동기 (Async)
+    - 스레드로 작업을 보내고, 완료되기를 기다리지 않고 바로 다음작업을 시작하는 것.
+- 같은 큐에서 같은큐로 동기(Sync)로 보내는 것을 주의해야한다.
+    - 같은 큐에 작업을 등록하고 해당작업을 같은 큐에 sync로 등록하게 되면 항상 그렇지는 않지만 같은 스레드에 작업을
+    한번 더 할당하게 될 수도 있습니다. 그렇게되면 아무 작업도 하지 못하게 되는 데드락이 발생할 수 있습니다.
+    ```swift
+    DispatchQueue.global().async {
+        DispatchQueue.global().sync {
+            // 상위의 큐와 동일한 스레드에 보냈다면...?
+        }
+    }
+    ```
+- Sync + Serial
+    - Sync이므로, DispatchQueue에 작업을 보내게 되면, 그 작어빙 완료될 때까지 다른 작업을 보내지 않는다.
+    - DispatchQueue는 스레드로 작업을 보낸다.
+    - Main Dispatch Queue에서는 Sync로 작업을 처리해서는 안된다.
+        - Main Dispatch Queue는 Main Thread만 사용하게 되는데, Main Thread로 보낸 작업을 
+- Async + Serial
+    - 순차적으로 작업이 끝난 것과는 상관없이 작업을 계속 진행된다.
+    
