@@ -216,7 +216,7 @@
         - 해결방법으로는 Semaphore에서 Ciritical Section에 접근하려다 실패한 프로세스를 Block 시킨 다음에 Ciritical Section에 자리가 났을 때 깨우는 방식을 사용한다.
             - Busy Waiting으로 인한 시간 낭비 문제가 해결된다.
 ### Deadlock(교착상태)
-    - 세마포어가 Ready Queue를 가지고 있고, 둘 이상의 프로세스가 Critical Section의 진입을 무한정 기다리고 있고, Ciritical Section에서 실행되는 프로세스는 진입 대기중인 프로세스가 실행되어야만 빠져나올 수 있는 상황을 지칭한다.
+- 세마포어가 Ready Queue를 가지고 있고, 둘 이상의 프로세스가 Critical Section의 진입을 무한정 기다리고 있고, Ciritical Section에서 실행되는 프로세스는 진입 대기중인 프로세스가 실행되어야만 빠져나올 수 있는 상황을 지칭한다.
 
 [처음으로](#운영체제)
 
