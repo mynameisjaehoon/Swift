@@ -9,4 +9,7 @@
 - [GCD, DispatchQueue](./swift-language/dispatch-queue.md)
 ## 코딩테스트
 > 코딩테스트에서 필요한 점들을 정리합니다.
-- [자료구조](./PS/data.md)
+- **자료구조**
+    - [사전(Dictionary)](./PS/data-structure/dictionary.md)
+- **기타**
+    - [아스키코드 ↔️ Character, String](./PS/etc/asciiValue.md)
