@@ -126,17 +126,72 @@
 
 [처음으로](#운영체제)
 
+- [CPU 스케줄러](#cpu-스케줄러)
+    - [FCFS(First Come First Serve)](#fcfsfirst-come-first-serve)
+    - [SJF(Shortest-Job-First)](#sjfshortest-job-first)
+    - [SRTF(Shortest Remaing Time First)](#srtfshortest-remaing-time-first)
+    - [Priority-Scheduling](#priority-scheduling)
+    - [Round-Robin](#round-robin-정보처리기사-시험에서-갑자기-기억이-나지-않아서-쓰지-못했던)
+
+## CPU 스케줄러
+
+스케줄러에서 스케줄링할 대상은 Ready Queue에 있는 프로세스를 대상으로 한다.
+### FCFS(First Come First Serve)
+- 먼저온 작업을 먼저 처리해주는 방식이다.
+- `Non-preemptive` 스케줄링
+    - CPU를 잡으면 작업이 완료될 때까지 CPU를 반환하지 않는다. 할당되었던 CPU가 반환될 때만 스케줄링이 이루어진다.
+- 소요시간이 긴 프로세스가 먼저 도달하게 되면 효율성이 낮아진다.
+
+### SJF(Shortest-Job-First)
+- 다른 프로세스가 먼저 도착했어도 CPU사용시간이 짦은 프로세스에게 CPU가 먼저 할당된다.
+- `Non-preemptive` 스케줄링 방식이다.
+- `starvation`
+    - 효율성을 추구하는 것이 가장 중요하긴 하지만, 수행시간이 긴 프로세스가 영원히 CPU를 할당받지 못할수도 있다.
+
+### SRTF(Shortest Remaing Time First)
+- `SJF`의 preemtive한 버전이라고 생각하면 편하다.
+- 새로운 프로세스가 도착할 때마다 새로운 스케줄링이 이루어진다.
+- 선점형(`Preemptive`) 스케줄링
+    - 현재 수행중인 프로세스의 남은 CPU 타임보다 더 짧은 CPU 타임을 가지는 프로세스가 도착하면 더 짧은 프로세스에게 CPU를 넘겨주는 스케줄링 방식이다.
+- `starvation`
+    - `SJF`와 동일하게 `starvation`문제가 있다.
+
+### Priority-Scheduling
+- `SJF`나 `SRTF`에서는 시간 짧게 걸리는 작업이 높은 우선순위를 가지고 처리되었다. 하지만 우선순위가 낮은 프로세스는 계속해서 뒤로 밀려서 CPU를 할당받지 못할수도 있는데, 이를 `starvation`이라고 한다.
+- 우선순위가 가장 높은 프로세스에게 CPU를 할당하는 스케줄링을 말한다.
+- Preemptive Scheduling
+    - 더 높은 우선순위의 프로세스가 도착하면 실행중인 프로세스를 멈추고 CPU를 선점한다.
+- Non-Premmptive Scheduling
+    - 더 높은 우선순위의 프로세스가 도작하면 Ready Queue의 Head에 넣는다.
+- 우선순위가 낮은 프로세스는 계속해서 뒤로 밀려서 CPU를 할당받지 못하는, `starvation`문제가 발생할 수 있다.
+- 우선순위가 낮았던 프로세스라도 오래 기다리면 높은 우선순위를 주는 `aging`이라는 방법을 사용해서 해결한다.
+
+### Round-Robin (~~정보처리기사 시험에서 갑자기 기억이 나지 않아서 쓰지 못했던~~)
+- interactive한 작업을 할 때 현대에 보편적으로 사용할 수 있는 방법이다.
+- 각 프로세스가 동일한 크기의 할당시간(time quantum)을 가지게 된다.
+- 할당시간이 지나면 CPU가 다른 프로세스에게 선점당하고 ready queue의 가장 뒤에가서 다시 줄을 선다
+- CPU사용시간이 랜덤한 프로세스들이 섞여있을 때 효율적이다.
+- 프로세스의 context를 save할 수 있기 때문에 가능한 방식이다.
+- 응답이 빠르다는 장점이 있지만, context switching이 자주 일어나는만큼 오버헤드가 많이 소모된다는 단점이 있다.
+
+> ⚠️ 주의점<br>
+> `time quantum`이 너무길어지면 `FCFS` 알고리즘과 다를바 없어진다.<br>
+> `time quantum`이 너무 짧으면 context switching이 그만큼 자주일어나 오버헤드가 많이 소모된다.<br>
+> 따라서 적절한 수준의 `time quantum`을 찾는 것이 중요하다.
+
+[처음으로](#운영체제)
+
 ## 프로세스 동기화
 ### `Critical Section`
-    - 앞의 멀티스레딩의 문제점에서도 보았듯이, 동일한 자원에 동시에 접근하는 작업을 실행하는 **코드 영역**을 `Critical Section`이라 부른다.
+- 앞의 멀티스레딩의 문제점에서도 보았듯이, 동일한 자원에 동시에 접근하는 작업을 실행하는 **코드 영역**을 `Critical Section`이라 부른다.
 
 ### Critical Section Problem(임계 영역문제)
-- 프로세스 들이 `Critical Section`을 함께 사용할 수 잇는 프로토콜을 설계해야한다.
+- 프로세스들이 `Critical Section`을 함께 사용할 수 있는 프로토콜을 설계해야한다.
 - 해결을 위한 기본 조건
     - Mutual Exclusive(상호 배제)
         - 하나의 프로세스가 `Critical Section` 내부에서 시행중이라면, 다른 프로세스들은 그들이 거쳐야하는 `Critical Section`에서 실행될 수 없다.
     - Progress(진행)
-        - `Ciritical Section`에서 실행중인 프로세스가 없고, 별도의 동작이 없는 프로세스들만 Ciritcal Section의 진입 후보가 될 수 있다.
+        - `Ciritical Section`에서 실행중인 프로세스가 없고, 별도의 동작이 없는 프로세스들만 `Ciritcal Section`의 진입 후보가 될 수 있다.
     - Bounded Waiting(한정된 대기)
         - 어떤 프로세스가 `Ciritical Section`에 진입 신청 후부터 받아들여질 때까지, 다른 프로세스들이 `Ciritical Section`에 진입하는 횟수는 제한이 있어야한다.
 
@@ -157,7 +212,7 @@
 - 단점
     - Busy Waiting
         - spin lock이란 만약 다른 스레드가 lock을 소유하고 있다면, 그 lock이 반환될 때까지 계속 확인하며 기다리는 것이다.
-        - 말그대로 바쁘게 기다리는 Busy Waiting이다. Critical Section에 진입해야 하는 프로세스가 진입코드를 계속 반복해서 실행해야한다.
+        - 말 그대로 바쁘게 기다리는 Busy Waiting이다. Critical Section에 진입해야 하는 프로세스가 진입코드를 계속 반복해서 실행해야한다.
         - CPU 시간을 낭비하게 된다.
         - 해결방법으로는 Semaphore에서 Ciritical Section에 접근하려다 실패한 프로세스를 Block 시킨 다음에 Ciritical Section에 자리가 났을 때 깨우는 방식을 사용한다.
             - Busy Waiting으로 인한 시간 낭비 문제가 해결된다.
