@@ -9,6 +9,12 @@
     - [장기 스케줄러](#장기-스케줄러)
     - [단기 스케줄러](#단기-스케줄러)
     - [중기 스케줄러](#중기-스케줄러)
+- [CPU 스케줄러](#cpu-스케줄러)
+    - [FCFS(First Come First Serve)](#fcfsfirst-come-first-serve)
+    - [SJF(Shortest-Job-First)](#sjfshortest-job-first)
+    - [SRTF(Shortest Remaing Time First)](#srtfshortest-remaing-time-first)
+    - [Priority-Scheduling](#priority-scheduling)
+    - [Round-Robin](#round-robin-정보처리기사-시험에서-갑자기-기억이-나지-않아서-쓰지-못했던)
 - [프로세스 동기화](#프로세스-동기화)
     - [Critical Section Problem](#critical-section)
     - [Critical Section - 임계영역 문제](#critical-section-problem임계-영역문제)
@@ -125,13 +131,6 @@
 - blocked된 상태는 Device I/O작업을 기다리는 상태이기 때문에 스스로 ready 상태로 돌아갈 수 있지만 이 상태는 외부적인 이유로 suspending되었기 때문에 스스로 돌아갈 수 없다.
 
 [처음으로](#운영체제)
-
-- [CPU 스케줄러](#cpu-스케줄러)
-    - [FCFS(First Come First Serve)](#fcfsfirst-come-first-serve)
-    - [SJF(Shortest-Job-First)](#sjfshortest-job-first)
-    - [SRTF(Shortest Remaing Time First)](#srtfshortest-remaing-time-first)
-    - [Priority-Scheduling](#priority-scheduling)
-    - [Round-Robin](#round-robin-정보처리기사-시험에서-갑자기-기억이-나지-않아서-쓰지-못했던)
 
 ## CPU 스케줄러
 
