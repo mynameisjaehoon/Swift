@@ -10,6 +10,7 @@
 ## 코딩테스트
 > 코딩테스트에서 필요한 점들을 정리합니다.
 - **자료구조**
+    - [스택 / 큐](./PS/data-structure/stack-queue.md)
     - [집합(Set)](./PS/data-structure/set.md)
     - [사전(Dictionary)](./PS/data-structure/dictionary.md)
 - **기타**
