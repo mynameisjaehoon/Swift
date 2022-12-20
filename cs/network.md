@@ -1,5 +1,16 @@
 # 네트워크
 
+- [OSI 7계층](#osi-7계층)
+- [3 Way Handshake & 4 Way Handshake](#3-way-handshake--4-way-handshake)
+    - [3 Way Handshake](#3-way-handshake)
+    - [4 Way Handshake](#4-way-handshake)
+- [TCP/UDP, 흐름제어, 혼잡제어](#tcpudp-흐름제어-혼잡제어)
+    - [흐름제어](#흐름제어)
+    - [혼잡제어](#혼잡제어)
+
+---
+
+
 ## OSI 7계층
 - 7계층을 나누는 이유
     - 통신이 일어나는 과정을 단계별로 알 수 있고, 특정한 곳에 이상이 생겼을 때 그 단계만 수정할 수 있기 때문이다.
