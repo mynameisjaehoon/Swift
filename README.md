@@ -2,6 +2,7 @@
 - ETC
     - [객체지향 프로그래밍]()
     - [프로토콜 지향 프로그래밍](./cs/etc/protocol-oriented-programming.md)
+    - [REST, REST API, RESTful](./cs/etc/restfulAPI.md)
 - 자료구조
 - [운영체제](./cs/operating-system.md)
 - [네트워크](./cs/network.md)
