@@ -12,7 +12,8 @@
 - [ARC, MRC](./swift-language/MRC-ARC.md)
 - Swift Concurrent
     - [Serial/Concurrent](./swift-language/swift-concurrent/serial-concurrent.md)
-    - []()
+    - [디스패치 큐의 종류](./swift-language/swift-concurrent/dispatchqueue.md)
+    - [디스패치 그룹](./swift-language/swift-concurrent/dispatch-group.md)
 ## 코딩테스트
 > 코딩테스트에서 필요한 점들을 정리합니다.
 - [백준](./PS/BOJ/)
