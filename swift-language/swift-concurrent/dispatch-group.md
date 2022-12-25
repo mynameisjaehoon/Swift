@@ -20,7 +20,7 @@ DispatchQueue.global(qos: ).async(group: group1) { ... }
 DispatchQueue.global().async(group: group1) { ... }
 
 group1.notify(queue: DispatchQueue.main) { [weak self] in
-		self?.textLabel.text = "모든 작업이 완료되었습니다."
+    self?.textLabel.text = "모든 작업이 완료되었습니다."
 }
 ```
 
@@ -60,7 +60,7 @@ DispatchQueue.global(qos: ).async(group: group1) { 비동기함수 }
 DispatchQueue.global().async(group: group1) { 비동기함수 }
 
 group1.notify(queue: DispatchQueue.main) { [weak self] in
-		self?.textLabel.text = "모든 작업이 완료되었습니다."
+    self?.textLabel.text = "모든 작업이 완료되었습니다."
 }
 ```
 - 지금까지는 작업의 내용이 동기적인것들만 살펴보았다면 작업을 보낼때 비동기함수가 들어있을 때 어떤 문제가 발생하는지 살펴보자
@@ -99,10 +99,10 @@ DispatchQueue.global().async(group: group1) {
 - 작업의 입장과 퇴장한다는 것을 표기해서 비동기적인 작업을 할때 제대로된 시점을 인식할 수 있도록 하면 됩니다.
     ```swift
     queue.async(group: group1) {
-            group1.enter() // 입장1
-            someAsyncMethod {
-                    group1.leave() // 퇴장1
-            }
+        group1.enter() // 입장1
+        someAsyncMethod {
+                group1.leave() // 퇴장1
+        }
     }
     ```
 - 입장과 퇴장 수를 세어서 그룹의 작업이 언제끝나는지 인식하게 해줄 수 있습니다.
