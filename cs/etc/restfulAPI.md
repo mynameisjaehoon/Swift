@@ -12,8 +12,14 @@
         - 계층화
         - Code on Demand
         - 인터페이스 일관성
-- [REST API]()
-- [RESTful]()
+- [REST API](#rest-api)
+    - [REST API란?](#rest-api란)
+    - [REST API의 특징](#rest-api의-특징)
+    - [REST API 설계 기본 규칙](#rest-api-설계-기본-규칙)
+- [RESTful](#restful)
+    - [RESTful이란?](#restful이란)
+    - [RESTful의 목적](#restful의-목적)
+    - [RESTful하지 못한 경우](#restful하지-못한-경우)
 
 ---
 
@@ -118,3 +124,57 @@
     - URI로 지정한 Resource에 대한 조작을 통일되고 한정적인 인터페이스로 수행한다.
     - HTTP 표준 프로토콜을 따르는 모든 플랫폼에서 사용이 가능하다
         - 특정 언어나 기술에 종속되지 않는다.
+
+
+
+
+## REST API
+### REST API란?
+- API(Application Programming Interface)
+    - 데이터와 기능의 집합을 제공하여 컴퓨터 프로그램간 상호작용을 촉진하며, 서로 정보를 교환가능 하도록 하는 것
+- REST API의 정의
+    - REST기반으로 서비스 API를 구현한 것
+    - OPEN API: 누구나 사용할 수 있도록 공개된 API, 구글맵, 공공 데이터 등
+    - 마이크로 서비스: 하나의 큰 애플리케이션을 여러 개의 작은 애플리케이션으로 쪼개어 변경과 조합이 가능하도록 만든 아키텍쳐
+    - OPEN API, 마이크로 서비스를 제공하는 업체 대부분은 REST API를 사용한다.
+### REST API의 특징
+- 사내 시스템들도 REST기반으로 시스템을 분산해 확장성과 재사용성을 높여 유지보수 및 운용을 편리하게 할 수 있다.
+- REST는 HTTP표준을 기반으로 구현하므로, HTTP를 지원하는 프로그램 언어로 클라이언트, 서버를 구현할 수 있다.
+- 즉, REST API를 제작하면 델파이 클라이언트 뿐만 아니라, 자바, C# 웹 등을 이용해 클라이언트를 제작할 수 있다.
+### REST API 설계 기본 규칙
+**참고 리소스 원형**
+> - 도큐먼트: 객체 인스턴스나 데이터베이스 레코드와 유사한 개념 
+> - 컬렉션: 서버에서 관리하는 디렉터리라는 소스
+> - 스토어: 클라이언트에서 관리하는 리소스 저장소
+
+- URI는 정보의 자원을 표현해야 한다
+    1. resource는 동사보다는 명사를, 대문자보다는 소문자를 사용해야한다.
+    2. resource의 도큐먼트 이름으로는 단수명사를 사용해야한다.
+    3. resource의 컬렉션 이름으로는 복수명사를 사용해야한다.
+    4. resource의 스토어 이름으로는 복수명사를 사용해야한다.
+        - `GET /Memeber/1` -> `GET /members/1`
+- 자원에 대한 행위는 HTTP Mehod(GET, PUT, POST, DELETE 등)로 표현한다.
+    1. URI에 HTTP Method가 들어가면 안된다.
+        - `GET /members/delete/1` -> `DELETE /members/1`
+    2. URI에 행위에 대한 동사 표현이 들어가면 안된다(즉, CRUD 기능을 나타내는 것은 URI에 사용하지 않는다.)
+        - `GET /members/show/1` -> `GET /members/1`
+        - `GET /members/insert/2` -> `POST /members/2`
+    3. 경로 부분 중 변하는 부분은 유일한 값으로 대체한다 (id는 하나의 특정 resource를 나타내는 고유 값이다.)
+        - student를 생성하는 route: `POST /students`
+        - id=12인 student를 삭제하는 route: `DELETE /students/12`
+
+## RESTful
+### RESTful이란?
+- 일반적으로 REST 아키텍처를 구혀하는 웹 서비스를 나타내기 위해 사용되는 용어이다.
+    - REST API를 제공하는 웹 서비스를 `RESTful`하다고 할 수 있다.
+- RESTful은 REST를 REST답게 쓰기 위한 방법으로, 누군가가 공식적으로 발표한 것이 아니다.
+    - 즉, REST원리를 따르는 시스템은 RESTful이란 용어로 지칭된다.
+
+### RESTful의 목적
+- 이해하기 쉽고 사용하기 쉬운 REST API를 만드는 것
+- RESTful한 API를 구현하는 근본적인 목적은 일관적인 컨벤션을 통한 API의 이해도 및 호환성을 높이는 것이다.
+- 성능이 중요한 상황에서는 굳이 RESTful한 API를 구현할 필요는 없다.
+
+### RESTful하지 못한 경우
+- CRUD를 모두 POST로만 처리하는 API
+- route에 resource, id외의 정보가 들어가는 경우(`/student/updateName`)
