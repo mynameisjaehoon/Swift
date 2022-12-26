@@ -31,7 +31,9 @@ ARC와 GC는 어떻게 다르고 애플의 Swift는 왜 ARC모델을 선택했�
 - ARC방식의 경우에는 retain cycle문제가 발생할 경우 해결할 수 없고 메모리 누수가 발생하게 된다. `weak`, `unowned`등 키워드를 사용해서 개발자가 사전에 방지해주어야 한다.
 - GC의 경우에는 결론부터 말하면 **순환참조를 해결할 수 있다.**
     - GC는 Mark and Sweep프로세스를 통해서 메모리에서 필요없는 부분을 해제한다.
+    
     <img width="813" alt="image" src="https://user-images.githubusercontent.com/76734067/209575777-894e7c34-b7be-4dda-85ae-f68cd34a08d4.png">
+
     - 가비지 컬렉터에는 GC root라는 가비지 컬렉션의 root역할을 하는 오브젝트가 있다.
     - Sweep이란?
         - 루트에서 시작하여 참조로 연결된 오브젝트들을 마크(mark)한다.
