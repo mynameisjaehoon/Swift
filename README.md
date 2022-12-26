@@ -12,6 +12,7 @@
 - [ARC, MRC](./swift-language/MRC-ARC.md)
 - [스위프트와 함수형언어]()
 - Swift Concurrent
+    - [GC와 ARC](./swift-language/gc-arc.md)
     - [Serial/Concurrent](./swift-language/swift-concurrent/serial-concurrent.md)
     - [디스패치 큐의 종류](./swift-language/swift-concurrent/dispatchqueue.md)
     - [디스패치 그룹](./swift-language/swift-concurrent/dispatch-group.md)
