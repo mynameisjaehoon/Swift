@@ -28,7 +28,7 @@ Application Bundle은 개발자들에 의해서 가장 흔하게 생성되는 �
 애플리케이션 번들 중 리소스는 거의 옵셔널하지만 항상 그런것은 아니다. 예를 들어 iOS 앱은 보통 추가적인 아이콘 이미지를 요구하기도 한다.(Xcode 14에 와서는 하나로 통일 할 수 있게 되었다.)
 
 보통 iOS 앱의 애플리케이션 번들은 실행파일(executable)과 앱에 의해 사용되는 리소스(아이콘, 이미지, localized 컨텐츠)를 최상위 번들 
-디렉토리에 포함한다. 아래는 Archive에 있는 MyApp이라는 앰의 구조이다. 서브디렉토리로 존재하는 파일들은 localized를 위한 파일이다. 하지만 얼마든지 서브디렉토리는 개발자가 직접생성하고 관련된 파일 끼리 리소를 관리하는 것도 가능하다.
+디렉토리에 포함한다. 아래는 Archive에 있는 MyApp이라는 앱의 구조이다. 서브디렉토리로 존재하는 파일들은 localized를 위한 파일이다. 하지만 얼마든지 서브디렉토리는 개발자가 직접생성하고 관련된 파일끼리 리소스를 관리하는 것도 가능하다.
 ```
 MyApp.app
    MyApp
@@ -50,7 +50,7 @@ MyApp.app
 - **Application icons**: `MyAppIcon.png`, `MySearchIcon.png`, `mySettingIcon.png`가 여기에 속한다. 아이콘은 앱을 나타내는데 사용하고, 홈 화면 또는 앱을 검색했을 때 아이콘이 가장먼저 보여지는 정보이므로 반드시 포함되어야한다.
 - **Info.plist**: 번들ID, 버전 번호, 디스플레이 네임 등과 같은 앱의 설정(Configuration)정보를 담고 있는 파일로 꼭 포함되어야한다.
 - **Launch Image**: 위 구조에서는 `Default.png`가 여기에 속한다. 앱의 initial interface를 보여주는 이미지이다. 시스템은 제공된 런치 이미지 중 하나를 앱이 윈도우와 유저 인터페이스를 로드할 동안 임시 배경으로 사용한다. 만약 이 런치 이미지가 없다면 검은 화면이 보여질 것이다.
--**MainWindow.nib**: 앱의 main nib file은 Launch Time에 앱을 로드하기 위한 기본 인터페이스 오브젝트를 포함한다. 보통 앱의 메인 윈도우 객체와 앱 델리게이트 객체를 가지고 있다.
+- **MainWindow.nib**: 앱의 main nib file은 Launch Time에 앱을 로드하기 위한 기본 인터페이스 오브젝트를 포함한다. 보통 앱의 메인 윈도우 객체와 앱 델리게이트 객체를 가지고 있다.
 - **Setting.bundle**: 앱의 specific preferences를 포함하는 특별한 타입의 플러그인이다. 이 번들은 preferences를 configure하고 디스플레이 하기 위한 property list와 다른 리소스 파일을 포함한다. 
 - **Custom resource files**: non-localized 리소스들은 탑 레벨 리소스에, localized 리소스는 language-specific 서브 디렉토리에 위치한다.
 
