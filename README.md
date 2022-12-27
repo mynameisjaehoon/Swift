@@ -3,9 +3,15 @@
     - [객체지향 프로그래밍]()
     - [프로토콜 지향 프로그래밍](./cs/etc/protocol-oriented-programming.md)
     - [REST, REST API, RESTful](./cs/etc/restfulAPI.md)
+    - [선언형 프로그래밍이란?]()
+    - [함수형 프로그래밍](./cs/etc/functional-programming.md)
 - 자료구조
 - [운영체제](./cs/operating-system.md)
 - [네트워크](./cs/network.md)
+
+## iOS
+
+
 ## Swift Languages
 - [map, compactMap, flatMap](./swift-language/map_compactMap.md)
 - [정적/동적 디스패치, final 키워드](./swift-language/dynamic-static-dispatch.md)
