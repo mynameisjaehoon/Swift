@@ -12,6 +12,7 @@
 ## iOS
 - [iOS앱 번들](./iOS/app-bundle.md)
 - [샌드박스 방식](./iOS/sandbox.md)
+- [App/Scene 라이프사이클](./iOS/app-scene-lifecycle.md)
 
 ## Swift Languages
 - [map, compactMap, flatMap](./swift-language/map_compactMap.md)
