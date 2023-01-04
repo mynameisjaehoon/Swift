@@ -26,7 +26,7 @@
     - [선언형 프로그래밍이란?]()
     - [함수형 프로그래밍](./cs/etc/functional-programming.md)
 - 자료구조
-    - [트리(Heap)](./cs/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/tree.md)
+    - [트리(Tree)](./cs/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/tree.md)
     - [힙(Heap)](./cs/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/heap.md)
 - [운영체제](./cs/operating-system.md)
 - [네트워크](./cs/network.md)
