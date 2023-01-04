@@ -153,4 +153,4 @@ mutating func pop() -> T? {
 
 # Reference
 - [Github 블로그 - 힙(heap)이란?](https://gmlwjd9405.github.io/2018/05/10/data-structure-heap.html)
- -[티스토리 - Swift) 힙(Heap)](https://babbab2.tistory.com/109)
+- [티스토리 - Swift) 힙(Heap)](https://babbab2.tistory.com/109)
