@@ -31,7 +31,7 @@
 - [운영체제](./cs/operating-system.md)
 - 네트워크
     - [TCP/UDP, 3Way handshake, 혼잡제어](./cs/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/network.md)
-    - [HTTP와 HTTPS](./cs/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/HTTP%EC%99%80%20HTTPS.md)
+    - [HTTP와 HTTPS, 암호화/복호화](./cs/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/HTTP%EC%99%80%20HTTPS.md)
 
 ## CS - Deep Dive
 - [자료구조](./cs/deep-question/data-structure.md)
