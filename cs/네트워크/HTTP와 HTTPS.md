@@ -49,7 +49,7 @@
 
 실제 HTTPS연결과정이 성립되는 흐름을 살펴보면 다음과 같다.
 
-<img width="60%" src="https://user-images.githubusercontent.com/76734067/210759819-5e776147-c5d9-4532-8d4f-f797d63296b2.png">
+<img width="45%" src="https://user-images.githubusercontent.com/76734067/210759819-5e776147-c5d9-4532-8d4f-f797d63296b2.png">
 
 1. 클라이언트(브라우저)가 서버로 최초 연결 시도를 한다.
 2. 서버는 공개키(인증서)를 브라우저에 넘겨준다.
