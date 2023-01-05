@@ -29,7 +29,9 @@
     - [트리(Tree)](./cs/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/tree.md)
     - [힙(Heap)](./cs/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/heap.md)
 - [운영체제](./cs/operating-system.md)
-- [네트워크](./cs/network.md)
+- 네트워크
+    - [TCP/UDP, 3Way handshake, 혼잡제어](./cs/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/network.md)
+    - [HTTP와 HTTPS](./cs/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/HTTP%EC%99%80%20HTTPS.md)
 
 ## CS - Deep Dive
 - [자료구조](./cs/deep-question/data-structure.md)
