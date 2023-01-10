@@ -7,16 +7,15 @@
 
 ---
 
-## 디스패이 그룹이라는 개념이 왜 필요하지?
+## 디스패치 그룹이라는 개념이 왜 필요하지?
 
 <img width="1463" alt="image" src="https://user-images.githubusercontent.com/76734067/209479894-db665784-68d7-45b1-97d1-33726ef4dae6.png">
 
 - 지금까지 공부하고 있는 것: 작업을 다른 큐로 보내서 그 큐가 여러 스레드로 분산처리한다.
 - `유사한`작업들을 묶어놓고 그 작업이 언제 끝날지 알고, 그 시점에 무언가 작업을 하고 싶을 때 사용한다.
     - 예시) 런치스크린이 실행되고 앱의 첫 화면이 나오기 전에 이미지를 불러오는 등 작업을 하고싶을 때
-    <img width="450" alt="image" src="https://user-images.githubusercontent.com/76734067/209479901-21646691-0159-4c10-8a41-6f647199cb69.png">
     - `다운로드가 다끝난 다음에 화면을 띄우자`라는 기획 등...
-
+    <img width="450" alt="image" src="https://user-images.githubusercontent.com/76734067/209479901-21646691-0159-4c10-8a41-6f647199cb69.png">
 
 ```swift
 let group1 = DispatchGroup()
