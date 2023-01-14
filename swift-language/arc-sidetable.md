@@ -46,10 +46,10 @@ weak reference가 1이지만 strong reference가 0 이므로, ARC에 의해서 �
 - 이미지에서 볼 수 있듯이 strong, unowned reference는 객체자체를 찹조하고 있으나, weak reference는 side table을 참조하고 있다.
 - 이것이 메모리 관리 향상을 위한 side table의 사용이고, weak와 unowned reference의 차이점이라고 말할 수 있다.
 
-<img width="60%" wrc="https://user-images.githubusercontent.com/76734067/212493303-c417306e-c24b-456c-ab70-568acffdded7.png">
+<img width="60%" src="https://user-images.githubusercontent.com/76734067/212493303-c417306e-c24b-456c-ab70-568acffdded7.png">
 
 - swift 4부터 weak reference가 side table을 참조하는 특성을 가진다.
-- **strong reference count가 0에 도달하면 weak reference count와 상관없이 `object deinitialize`, `memory deallocate`가 모두 일어나게 된다.
+- **strong reference count가 0에 도달하면 weak reference count와 상관없이 `object deinitialize`, `memory deallocate`가 모두 일어나게 된다.**
 
 # 결론
 - weak reference와 unowned reference의 차이점은 객체를 직접 참조하느냐(unowned), 객체의 side table을 참조하느냐(weak)에 있다.
