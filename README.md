@@ -9,8 +9,9 @@
 - [map, compactMap, flatMap](./swift-language/map_compactMap.md)
 - [정적/동적 디스패치, final 키워드](./swift-language/dynamic-static-dispatch.md)
 - [ARC, MRC](./swift-language/MRC-ARC.md)
-- [스위프트와 함수형언어]()
 - [GC와 ARC](./swift-language/gc-arc.md)
+- [ARC와 side table](./swift-language/arc-sidetable.md)
+- [스위프트와 함수형언어]()
 - [스위프트와 캐시(NSCache)](./swift-language/swift-cache.md)
 - Swift Concurrency
     - [Serial/Concurrent](./swift-language/swift-concurrent/serial-concurrent.md)
