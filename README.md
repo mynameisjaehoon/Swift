@@ -22,7 +22,7 @@
 
 ## CS
 - ETC
-    - [객체지향 프로그래밍]()
+    - [객체지향 프로그래밍](./cs/etc/OOP.md)
     - [프로토콜 지향 프로그래밍](./cs/etc/protocol-oriented-programming.md)
     - [REST, REST API, RESTful](./cs/etc/restfulAPI.md)
     - [선언형 프로그래밍이란?]()
