@@ -41,6 +41,7 @@
     - [HTTP와 HTTPS, 암호화/복호화](./cs/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/HTTP%EC%99%80%20HTTPS.md)
 
 ## CS - Deep Dive
+> **질문출처**: [VSFe/Tech-Interview](https://github.com/VSFe/Tech-Interview)
 - [자료구조](./cs/deep-question/data-structure.md)
 - [운영체제](./cs/deep-question/os-q.md)
 - [네트워크](./cs/deep-question/network.md)
