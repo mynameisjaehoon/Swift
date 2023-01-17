@@ -27,6 +27,7 @@
     - [REST, REST API, RESTful](./cs/etc/restfulAPI.md)
     - [선언형 프로그래밍이란?]()
     - [함수형 프로그래밍](./cs/etc/functional-programming.md)
+    - [컴파일러 언어와 인터프리터 언어](./cs/etc/compile-interpreter.md)
 - 자료구조
     - [스택 / 큐](./PS/data-structure/stack-queue.md)
     - [집합(Set)](./PS/data-structure/set.md)
