@@ -231,7 +231,7 @@ FCFS, SJF, SRTF, Priority-Scheduling, Round-Robin(RR)등이 있스빈다.
 - **동시성과 병렬성의 차이에 대해 설명해 주세요.**<br>
   동시성은 작업이 끝나기를 기다리고 처리하는지, 아니면 작업이 끝나는 것을 기다리지 않는것의 문제이고, 병렬성은 작업을 하나의 스레드에서 처리할 지, 여러개의 스레드에서 처리할지에 대한 것이다.
 - **Multi-level Feedback Queue**가 무엇인가요?
-
+  - [멀티 레벨 피드백 큐](https://velog.io/@jewelrykim/%EB%A9%80%ED%8B%B0-%EB%A0%88%EB%B2%A8-%ED%94%BC%EB%93%9C%EB%B0%B1-%ED%81%90%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84-%EC%8A%A4%EC%BC%80%EC%A5%B4%EB%A7%81)
 - **타 스케쥴러와 비교하여, Multi-level Feedback Queue는 어떤 문제점들을 해결한다고 볼 수 있을까요?**<br>
   1. 짧은 작업을 먼저 실행시켜 반환시간을 최적화 하고자 하였다.<br>
     SJF, STCF같은 알고리즘은 작업의 실행시간정보를 필요로 하지만, 운영체제 입장에서는 작업의 실행시간에 대한 정보를 미리 알 수 없다.
