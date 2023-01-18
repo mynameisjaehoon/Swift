@@ -189,7 +189,7 @@ CPU가 프로그램을 실행하고 있을 때, 입출력 하드웨어 등의 �
 <div markdown="1">  
 
 1. Task의 대부분의 정보는 Register에 저장되고 PCB(Process Control Block)으로 관리된다.
-2. 현재 실행하고 있는 tAsk의 PCB정보를 저장한다.(Process Stack, Ready Queue)
+2. 현재 실행하고 있는 Task의 PCB정보를 저장한다.(Process Stack, Ready Queue)
 3. 다음에 실행할 Task의 PCB정보를 읽어 Register에 적재하고 CPU가 이전에 진행했던 과정을 연속적으로 수행할 수 있다.
 
 - **그래서 컨텍스트 스위칭이란 무엇인가요?**<br>
@@ -221,7 +221,7 @@ CPU가 프로그램을 실행하고 있을 때, 입출력 하드웨어 등의 �
 <div markdown="1">  
 
 [다음 페이지](https://github.com/January1st-98/Swift/blob/main/cs/operating-system.md#cpu-%EC%8A%A4%EC%BC%80%EC%A4%84%EB%9F%AC)에 정리해두었습니다.<br>
-FCFS, SJF, SRTF, Priority-Scheduling, Round-Robin(RR)등이 있스빈다.
+FCFS, SJF, SRTF, Priority-Scheduling, Round-Robin(RR)등이 있습니다.
 
 - **RR을 사용할 때, Time Slice에 따른 trade-off를 설명해 주세요.**<br>
   - Time Slice가 짧아질수록 사용자 반응성이 좋아지지만 context switching이 발생하기 때문에 그만큼 오버헤드가 많이 소모된다.
