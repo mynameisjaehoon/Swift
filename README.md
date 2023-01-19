@@ -29,14 +29,24 @@
     - [선언형 프로그래밍이란?]()
     - [함수형 프로그래밍](./cs/etc/functional-programming.md)
     - [컴파일러 언어와 인터프리터 언어](./cs/etc/compile-interpreter.md)
-- 자료구조
+- **자료구조**
     - [스택 / 큐](./PS/data-structure/stack-queue.md)
     - [집합(Set)](./PS/data-structure/set.md)
     - [사전(Dictionary)](./PS/data-structure/dictionary.md)
     - [트리(Tree)](./cs/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/tree.md)
     - [힙(Heap)](./cs/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/heap.md)
-- [운영체제](./cs/operating-system.md)
-- 네트워크
+- **운영체제**
+    - [시스템 콜](./cs/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/system-call.md)
+    - [이중 동작모드](./cs/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/dual-mode.md)
+    - [프로세스와 스레드](./cs/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/process-thread.md)
+    - [멀티스레드와 멀티프로세스의 장단점](./cs/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/multi-process-thread.md)
+    - [스케줄러](./cs/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/scheduler.md)
+    - [CPU 스케줄러](./cs/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/cpu-scheduler.md)
+    - [프로세스 동기화](./cs/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/process-synchonize.md)
+    - [메모리 관리 전략](./cs/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/memory-handle.md)
+    - [가상메모리](./cs/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/virtual-memory.md)
+    - [IPC(Inter-Process-Communication)]()
+- **네트워크**
     - [TCP/UDP, 3Way handshake, 혼잡제어](./cs/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/network.md)
     - [HTTP와 HTTPS, 암호화/복호화](./cs/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/HTTP%EC%99%80%20HTTPS.md)
 
