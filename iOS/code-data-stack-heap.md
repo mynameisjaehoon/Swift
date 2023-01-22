@@ -31,9 +31,25 @@ var age: Int?
 - 스택영역에 저장되는 함수의 호출정보를 스택프레임(stack frame)이라고 한다.
 - LIFO방식으로 작동해서 가장 늦게 저장된 데이터가 가장 빨리 pop된다.
 - CPU에 의해서 관리되고 최적화되서 속도가 매우빠르다는 장점이 있다.
+- 메모리의 높은주소 -> 낮은 주소 방향으로 할당된다.
 ```swift
 func add(a: Int, b: Int) -> Int { // 매개변수 a, b는 스택영역에 할당된다.
     let result = a + b // 지역변수 result는 스택영역에 할당된다.
     return result
 }
 ```
+
+## Heap
+- 사용자에 의해 메모리 공간이 동적으로 할당되고 해제된다.
+- 메모리의 낮은 주소 -> 높은 주소 방향으로 할당된다.
+```swift
+class Person {
+    var name: String?
+    var age: Int?
+}
+
+var person: Person = Person() // 클래스 인스턴스는 힙, person변수는 스택영역에 할당된다.
+```
+
+## 비교
+### Code & Data vs. Stack & Heap
