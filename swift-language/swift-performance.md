@@ -45,8 +45,6 @@ Class는 struct가 인스턴스 내부 변수 개수에 맞추어 2words의 사�
 <img width="90%" src="https://user-images.githubusercontent.com/76734067/215087553-e989c654-c807-4de2-ab3c-8656a027ea66.png">
 </p>
 
-
-
 ### Heap Allocation 피하기 예시
 메세지 애플리케이션에서 사용하는 코드를 예시로 들어주었습니다. 뷰 레이어에서 사용되는 코드이고, `makeBalloon(_::)`라는 말풍선 이미지를 반환하는 함수입니다.
 
@@ -57,10 +55,10 @@ Class는 struct가 인스턴스 내부 변수 개수에 맞추어 2words의 사�
 </p>
 
 여기서 사용자가 스크롤을 할 때 뷰를 부드럽게 처리하기 위해서 캐싱을 위한 `Dictionary`타입의 `cache`를 만들어 주었습니다. 이렇게 되면 한번 만들어둔 말풍선 이미지는 또 생성해서 만들 피룡없이
-캐시에서 조회하고 dictionary를 통해 바로 가져올 수 있습니다. cache에서 캐싱을 위한 키 역할을 하는 `dictionary`의 `key`는 `Color`, `Orientation`, `Tail`을 직렬화한 `String`타입인것도 볼 수 있씁니다.
+캐시에서 조회하고 dictionary를 통해 바로 가져올 수 있습니다. cache에서 캐싱을 위한 키 역할을 하는 `dictionary`의 `key`는 `Color`, `Orientation`, `Tail`을 직렬화한 `String`타입인것도 볼 수 있습니다.
 
 <p align="center">
-<img width="90%" src="https://user-images.githubusercontent.com/76734067/215093271-c14911aa-fe12-4429-a4f4-484d8d84ea24.pn">
+<img width="90%" src="https://user-images.githubusercontent.com/76734067/215093271-c14911aa-fe12-4429-a4f4-484d8d84ea24.png">
 </p>
 
 `그래서 지금 이 코드가 무엇이 문제인가?`를 이야기해봅시다. 일단 `key`가 `String`타입이기 때문에 다른 값이 들어갈 수 있는 위험이 있습니다.
