@@ -11,6 +11,7 @@
 - [ARC, MRC](./swift-language/MRC-ARC.md)
 - [GC와 ARC](./swift-language/gc-arc.md)
 - [ARC와 side table](./swift-language/arc-sidetable.md)
+- [구조체와 클래스](./swift-language/class-and-struct.md)
 - [스위프트와 함수형언어]()
 - [스위프트와 캐시(NSCache)](./swift-language/swift-cache.md)
 - [스위프트의 컴파일과정](./swift-language/swift-compile.md)
