@@ -53,6 +53,8 @@
     - [메모리 관리 전략](./cs/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/memory-handle.md)
     - [가상메모리](./cs/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/virtual-memory.md)
     - [IPC(Inter-Process-Communication)](./cs/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/ipc.md)
+    - [페이지 교체 알고리즘](./cs/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/page-algorithm.md)
+    - [데드락](./cs/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/deadlock.md)
 - **네트워크**
     - [소켓이란?](./cs/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/socket.md)
     - [TCP/UDP, 3Way handshake, 혼잡제어](./cs/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/network.md)
