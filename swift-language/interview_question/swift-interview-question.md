@@ -41,13 +41,94 @@ AnyObject는 모든 클래스 타입의 인스턴스를 나타내는 프로토�
 
 Optional이란 스위프트에서 값이 있을 수도 있고, 없을수도 있다 라는 것을 표현하기 위해서 사용하는 것입니다. 변수의 타입 뒤에 `?`를 붙여서 표현합니다. 옵셔널 타입을 선언함으로써 값이 없다라는 의미인 `nil`을 변수에 넣어줄 수 있게 됩니다.
 
-또 Optional로 선언된 변수들은 값이 있는 것인지, nil인 것인지 wrap되어서 보르는 상태가 됩니다. 실제로 옵셔널 변수를 그냥 출력해보면 value가 있다고 하더라고 value가 바로 출력되지 않고 Optional로 감싸져 있는 형태로 출력됩니다. 이 wrapping되어있는것을 사용하기 위해서는 Unwrapping이라는 과정이 필요하게 됩니다.
-
+또 Optional로 선언된 변수들은 값이 있는 것인지, nil인 것인지 wrap되어서 모르는 상태가 됩니다. 실제로 옵셔널 변수를 그냥 출력해보면 value가 있다고 하더라고 value가 바로 출력되지 않고 Optional로 감싸져 있는 형태로 출력됩니다. 이 wrapping되어있는것을 사용하기 위해서는 Unwrapping이라는 과정이 필요합니다.
 
 </details>
 
+<details>
+<summary><h4>subscript에 대해 설명하시오</h4></summary>
+<div markdown="1">  
 
+클래스, 구조체, 열거형에서 시퀀스의 멤버요소에 접근하기 위한 바로가기 문법을 말합니다. 대표적으로 배열에서 대괄호안에 index를 넣어줘서 멤버요소에 접근하는 것있습니다.
 
+콜렉션, 리스트, 시퀀스 등 집합의 특정 member elements에 간단하게 접근할 수 있는 문법을 말합니다. 입력되는 숫자에 제한이 없고, 입력 인자의 타입과 반환되는 타입에 제한도 없습니다. 하지만 in-out인자나 기본인자값을 제공할 수는 없습니다.
+
+</details>
+
+<details>
+<summary><h4>String은 왜 subscript로 접근이 안되는지 설명하시오.</h4></summary>
+<div markdown="1">  
+
+인덱스로 접근한다는 것은 배열에서 메모리의 주소를 계산해서 데이터 타입의 크기만큼 읽어들인 다는 것을 의미한다. String을 먼저 살펴보면 구조체이고, Character의 Collection, 즉 Array<Element>에서 element가 Character인 배열입니다. Swift에서 Character는 1개 이상의 Unicode Scalar로 이루어져있기 때문에 크기가 가변적입니다. 따라서 다른 언어 와 같이 정수로 접근해서 저장되어있는 위치를 정확하게 계산할 수 없기 때문에 subscript로 접근할 수 없습니다.
+
+따라서 String은 subscript를 `Int`가 아니라 `String.Index`를 통해서 값을 확인할 수 없습니다.
+
+</details>
+
+<details>
+<summary><h4>instance 메서드와 class 메서드의 차이점을 설명하시오.</h4></summary>
+<div markdown="1">  
+</details>
+
+<details>
+<summary><h4>class 메서드와 static 메서드의 차이점을 설명하시오.</h4></summary>
+<div markdown="1">  
+</details>
+
+<details>
+<summary><h4>Delegate 패턴을 활용하는 경우를 예를 들어 설명하시오.</h4></summary>
+<div markdown="1">  
+</details>
+
+<details>
+<summary><h4>Singleton 패턴을 활용하는 경우를 예를 들어 설명하시오.</h4></summary>
+<div markdown="1">  
+</details>
+
+<details>
+<summary><h4>KVO 동작 방식에 대해 설명하시오.</h4></summary>
+<div markdown="1">  
+</details>
+
+<details>
+<summary><h4>Delegates와 Notification 방식의 차이점에 대해 설명하시오.</h4></summary>
+<div markdown="1">  
+</details>
+
+<details>
+<summary><h4>멀티 쓰레드로 동작하는 앱을 작성하고 싶을 때 고려할 수 있는 방식들을 설명하시오.</h4></summary>
+<div markdown="1">  
+</details>
+
+<details>
+<summary><h4>MVC 구조에 대해 블록 그림을 그리고, 각 역할과 흐름을 설명하시오.</h4></summary>
+<div markdown="1">  
+</details>
+
+<details>
+<summary><h4>프로토콜이란 무엇인지 설명하시오.</h4></summary>
+<div markdown="1">  
+</details>
+
+<details>
+<summary><h4>Protocol Oriented Programming과 Object Oriented Programming의 차이점을 설명하시오.</h4></summary>
+<div markdown="1">  
+</details>
+
+<details>
+<summary><h4>Hashable이 무엇이고, Equatable을 왜 상속해야 하는지 설명하시오.</h4></summary>
+<div markdown="1">  
+</details>
+
+<details>
+<summary><h4>mutating 키워드에 대해 설명하시오.</h4></summary>
+<div markdown="1">  
+</details>
+
+<details>
+<summary><h4>탈출 클로저에 대하여 설명하시오.</h4></summary>
+<div markdown="1">  
+</details>
 
 <details>
 <summary><h4></h4></summary>
