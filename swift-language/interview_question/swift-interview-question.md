@@ -86,11 +86,18 @@ class 메서드는 인스턴스를 만들어서 실체화하지 않아도 클래
 <details>
 <summary><h4>class 메서드와 static 메서드의 차이점을 설명하시오.</h4></summary>
 <div markdown="1">  
+
+class 메소드와 static 메소드 둘다 타입메소드라는 공통점이 있지만, 오버라이드 가능 여부에서 차이점이 있습니다.
+static 메서드는 서브클래스에서 오버라이드 할 수 없는 타입메서드이고, class 메서드는 서브클래스에서 오버라이드할 수 있는 타입 메서드라는 것입니다.
+
 </details>
 
 <details>
 <summary><h4>Delegate 패턴을 활용하는 경우를 예를 들어 설명하시오.</h4></summary>
 <div markdown="1">  
+
+
+
 </details>
 
 <details>
