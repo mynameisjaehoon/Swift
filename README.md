@@ -64,6 +64,7 @@
     - [SSL과 TLS](./cs/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/ssl-tls.md)
     - [IPv4, IPv6](./cs/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/ipv4v6.md)
     - [쿠키와 세션](./cs/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/cookie-and-session.md)
+    - [로드밸런싱](./cs/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/load_balancing.md)
 - **데이터베이스**
     - [인덱스(Index)](./cs/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/index.md)
     - [정규화](./cs/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/normalization.md)
