@@ -16,6 +16,7 @@
 - [스위프트와 캐시(NSCache)](./swift-language/swift-cache.md)
 - [스위프트의 컴파일과정](./swift-language/swift-compile.md)
 - [스위프트 퍼포먼스](./swift-language/swift-performance.md)
+- [KVO, KVC](./swift-language/%08kvc-kvo.md)
 - Swift Concurrency
     - [Serial/Concurrent](./swift-language/swift-concurrent/serial-concurrent.md)
     - [디스패치 큐의 종류](./swift-language/swift-concurrent/dispatchqueue.md)
@@ -34,6 +35,7 @@
     - [프로토콜 지향 프로그래밍](./cs/etc/protocol-oriented-programming.md)
     - [REST, REST API, RESTful](./cs/etc/restfulAPI.md)
     - [선언형 프로그래밍이란?]()
+    - [고차함수(HOF, High Order Function)]()
     - [함수형 프로그래밍](./cs/etc/functional-programming.md)
     - [컴파일러 언어와 인터프리터 언어](./cs/etc/compile-interpreter.md)
     - [Blocking-Non-Blocking / Synchronous-Asynchronous](./cs/etc/blocking-nonblocking.md)
