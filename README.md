@@ -73,6 +73,10 @@
     - [정규화](./cs/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/normalization.md)
     - [트랜잭션](./cs/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/transaction.md)
     - [정규화](./cs/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/normalization.md)
+- **알고리즘**
+    - 정렬 알고리즘
+        - [Stable Sort란?](./cs/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/sort/stable-sort.md)
+        - [Merge Sort](./cs/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/sort/merge-sort.md)
 
 ## CS - Deep Dive
 > **질문출처**: [VSFe/Tech-Interview](https://github.com/VSFe/Tech-Interview)
