@@ -1,14 +1,6 @@
 # Reactive Programming이란?
 > 다음글은 [What is Reactive Programming?](https://medium.com/@kevalpatel2106/what-is-reactive-programming-da37c1611382)를 그대로 번역한 것 입니다.
 
-- [](#what-is-reactive-programming)
-- [](#비동기-작업이-필요한-이유가-무엇인가요)
-- [](#평가-매트릭스evaluation-matrix)
-    - [](#explicit-execution)
-    - [](#easy-thread-management간편한-스레드-관리)
-    - [](#easy-composable구성하기-쉬워야-한다)
-    - []()
-
 ## What is Reactive Programming?
 요즘 모두가 반응형 프로그래밍에 대해 이야기하고 있고, 우리는 반응형 프로그래밍이라는 새로운 것을 배우는데 호기심을 가지고 있습니다. 몇 군데에서 리액티브 프로그래밍이 사용되는 것을 본 적이 있지만 여전히 약간 혼란스러워서 몇가지 설명이 듣고 싶을 수도 있습니다.
 
