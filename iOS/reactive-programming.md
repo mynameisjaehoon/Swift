@@ -59,6 +59,41 @@ Rx는 비동기 프로그래밍을 위한 것으로 스레드 관리가 필요�
 
 <img width="50%" src="https://user-images.githubusercontent.com/76734067/218329400-83e98024-1491-4a50-81d4-5e5ba2d4c2aa.png">
 
-1. 데이터를 방출하는 **`Observable`** 을 만든다.
-2. 데이터를 소비하는 **`Observer`** 를 생성한다.
-3. 동시성을 관리하는 **`Scheduler`** 를 정의한다.
+```java
+Observable<String> database = Observable      //Observable. This will emit the data
+                .just(new String[]{"1", "2", "3", "4"});    //Operator
+
+ Observer<String> observer = new Observer<String>() {
+           @Override
+            public void onCompleted() {
+                //...
+            }
+
+            @Override
+            public void onError(Throwable e) {
+                //...
+            }
+
+            @Override
+            public void onNext(String s) {
+                //...
+            }
+        };
+
+database.subscribeOn(Schedulers.newThread())          //Observable runs on new background thread.
+        .observeOn(AndroidSchedulers.mainThread())    //Observer will run on main UI thread.
+        .subscribe(observer);  
+```
+
+
+### 1. 데이터를 방출하는 **`Observable`** 을 만든다.
+
+`database`변수가 데이터를 방출하는 Observable입니다. 이 경우에는 문자열을 방출하고 있습니다. just()는 연산자이고, 기본적으로 인자에 제공된 데이터를 하나씩 출력합니다.
+
+### 2. 데이터를 소비하는 **`Observer`** 를 생성한다.
+
+위 코드에서 observer 변수가 database observable이 방출하는 데이터를 소비하는 observer이다. observer는 받은 데이터를 처리하고 내부에서 에러를 관리하기도 한다.
+
+### 3. 동시성을 관리하는 **`Scheduler`** 를 정의한다.
+
+마지막으로 병렬성을 관리하기 위한 scheduler를 정의한다. `subscribeOn(Schedulers.newThread())`는 observable에게 백그라운드 스레드에서 실행되도록 발하는 것이다. `observeOn(AndroidSchedulers.mainThread())`는 observer에게 메인 스레드에서 실행되도록 한다. 이것이 반응형 프로그래밍의 기본이다.
