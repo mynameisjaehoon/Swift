@@ -22,7 +22,7 @@
 - [스위프트의 컴파일과정](./swift-language/swift-compile.md)
 - [스위프트 퍼포먼스](./swift-language/swift-performance.md)
 - [KVO, KVC](./swift-language/%08kvc-kvo.md)
-- Swift Concurrency
+- [Swift Concurrency](./swift-language/swift-concurrency.md)
     - [Serial/Concurrent](./swift-language/swift-concurrent/serial-concurrent.md)
     - [디스패치 큐의 종류](./swift-language/swift-concurrent/dispatchqueue.md)
     - [디스패치 그룹](./swift-language/swift-concurrent/dispatch-group.md)
