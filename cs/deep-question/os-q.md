@@ -258,7 +258,10 @@ FCFS, SJF, SRTF, Priority-Scheduling, Round-Robin(RR)등이 있습니다.
 <summary><h3>9. Deadlock 에 대해 설명해 주세요.</h3></summary>
 <div markdown="1">  
 
+Deadlock이란 두개이상의 프로세스나 스레드가 서로가 가지고 있는 자원을 요청해 더 이상 진행될 수 없는 상태를 말합니다.
+
 - **Deadlock 이 동작하기 위한 4가지 조건에 대해 설명해 주세요.**<br>
+  데드락의 발생 조건에는 상호배제, 점유대기, 비선점, 순환대기 4가지가 있습니다.
 - **그렇다면 3가지만 충족하면 왜 Deadlock 이 발생하지 않을까요?**<br>
 - **어떤 방식으로 예방할 수 있을까요?**<br>
 - **왜 현대 OS는 Deadlock을 처리하지 않을까요?**<br>
