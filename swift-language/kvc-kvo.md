@@ -1,3 +1,8 @@
+# KVC (Key-Value Coding)
+- 객체의 값을 직접 가져오지 않고 Key또는 KeyPath를 이용해서 간접적으로 데이터를 가져오거나 수정하는 방법.
+- keyPath는 `\BaseType.PropertyName`으로 KeyPath를 만들 수 있다.
+
+
 # KVO(Key-Value Observing)
 
 KVO란 특정 객체의 프로퍼티 변경사항을 다른 객체에 알리기 위해 사용하는 코코아 프로그래밍 패턴이다.

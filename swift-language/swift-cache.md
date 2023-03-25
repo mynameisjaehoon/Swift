@@ -85,6 +85,20 @@ var purgeAmount = (totalCostLimit > 0) ? (_totalCost - totalCostLimit) : 0
 
 코드의 다른 부분을 살펴보시면 count를 통해서도 해당 작업과 똑같은 것을 수행하시는 것을 볼 수 있습니다.
 
+## 추가적인 내용정리
+
+결국 문서를 보면 NSCache는 캐시 알고리즘으로 LRU와 LFU을 하이브리드로 사용하고 있다고 합니다. LRU는 가장 오랫동안 사용하지 않은 것을 캐시에서 제거하는 방법이고, LFU는 가장 적게 참조된 것을 해제하는 방법입니다.
+
+- 데이터 읽기
+    - 데이터를 읽을 때 특정 key에 대한 객체가 있는지를 확인하고 있다면 반환하기 전에 accessCount를 증가시키고, total Accesses를 증가시켜서 해당 객체에대한 참조횟수와 전체 참조 횟수를 업데이트 해줍니다.
+    - 객체를 리스트의 가장 마지막으로 옮겨서 가장 최근에 사용한 객체가 캐시 자료구조의 가장 마지막에 위치하도록 해줍니다.
+- 데이터 삭제
+    - 위에서도 설명했듯이 LRU와 LFU를 혼용해서 사용하고 있습니다.
+    - 다음 객체가 없을 때마다 while문을 진행하고 obj변수에서 객체를 하나씩 가져옵니다. 객체를 꺼내오는 리스트는 가장 참조한지 오래된 객체가 가장 앞에 있고, 가장 최근에 참조한 객체가 뒤에있었죠? 그래서 자연스럽게 LRU가 수행됩니다.
+    - 만약 이 객체의 참조 횟수가 평균 참조 횟수보다 작고, 제거가 가능하다면 해당 객체의 cost를 0으로 만들고, isEvictable을 NO로 만들어서 삭제할 타깃으로 설정되지 않도록 처리하고 있습니다. LFU가 여기서 사용됩니다.
+
+결론은 NSCache의 정책은 **참조한 지 가장 오래된 객체 중에서 참조 횟수가 평균 참조횟수보다 적은 객체**라고 할 수 있습니다.
+
 # Reference
 - [애플 공식문서 - NSCache](https://developer.apple.com/documentation/foundation/nscache)
 - [애플 깃헙 - NSCache 코드](https://github.com/apple/swift-corelibs-foundation/blob/main/Sources/Foundation/NSCache.swift)
