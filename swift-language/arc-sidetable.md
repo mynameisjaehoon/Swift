@@ -19,10 +19,10 @@ class User {
 }
 ```
 
-이 클래스를 강한 참조하면 아래와 같이 strong reference count가 올라갑니다.
+이 클래스를 강한 참조하면 아래와 같이 strong reference count가 올라갑니다.<br>
 <img width="50%" src="https://user-images.githubusercontent.com/76734067/227705207-d46812b7-fa0a-46cd-896c-1023207b20aa.png">
 
-약한 참조를 사용하면 아래와 같이 weak reference count가 올라갑니다.
+약한 참조를 사용하면 아래와 같이 weak reference count가 올라갑니다.<br>
 <img width="50%" src="https://user-images.githubusercontent.com/76734067/227705249-bd6915a8-6f61-4995-92bd-f65116790132.png">
 
 weak reference는 1이지만, strong reference는 0이므로 ARC에 의해서 객체가 메모리에서 삭제 됩니다. 
