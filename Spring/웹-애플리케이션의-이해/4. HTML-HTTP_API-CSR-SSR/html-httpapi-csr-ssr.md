@@ -4,19 +4,19 @@
 
 ## 정적리소스
 
-![Untitled](./images/Untitled.png)
+<img src="./images/Untitled.png" width="80%">
 
 정적리소스를 제공할 때는 보통 고정된 HTML파일, CSs, JS, 이미지 영상을 제공하면됩니다. /hello.html을 요청하게 되면 정해진 폴더에 있는 파일을 전달해주기만 하면됩니다.
 
 ### HTML 페이지
 
-![Untitled](./images/Untitled%201.png)
+<img src="./images/Untitled%201.png" width="80%">
 
 주문내역을 보여달라고 요청하면 WAS가 DB를 통해서 주문정보를 조회한 다음에 JSP, 타임리프 같은 뷰 템플릿을 사용해서 HTML을 동적으로 생성하고, 그 HTML을 웹브라우저에게 보내준다. 그럼 웹 브라우저는 html만 해설해서 보여주면 된다.
 
 ### HTTP API
 
-![Untitled](./images/Untitled%202.png)
+<img src="./images/Untitled%202.png" width="80%">
 
 HTML을 단순하게 전달하는 것이 아니라 **주로 JSON 형식**을 이용한 데이터를 보내주는 방식입니다. HTML로 렌더링 할 때 사용하는 것이 아니라 데이터만 주고 받고, UI 화면이 필요하면 클라이언트가 별도로 처리하게 된다. 
 
@@ -34,7 +34,7 @@ HTTP 방식으로 통신할 때는 이 세가지 방식을 고민하면 됩니�
 
 ### SSR - 서버 사이드 렌더링
 
-![Untitled](./images/Untitled%203.png)
+<img src="./images/Untitled%203.png" width="80%">
 
 **서버에서 최종적으로 HTML을 다 만들어서 웹브라우저에게 응답**을 보내주고, 웹 브라우저는 HTML를 렌더링 해서 보여주는 방법. 동적으로 만들어진 최종 결과물이 서버에서 전부 만들어 진다고 해서 서버사이드 렌더링 이라고 합니다.
 
@@ -44,7 +44,7 @@ HTTP 방식으로 통신할 때는 이 세가지 방식을 고민하면 됩니�
 
 관련기술에는 React, Vue.js가 있습니다 → 웹 프론트엔드 개발자
 
-![Untitled](HTML,%20HTTP%20API,%20CSR,%20SSR%20addc1821cc224af9a7e8416202b8582c/Untitled%204.png)
+<img src="./images/Untitled%204.png" width="80%">
 
 서버쪽에 요청을 하는점을 똑같다 하지만 클라이언트 사이드 렌더링의 경우에는
 

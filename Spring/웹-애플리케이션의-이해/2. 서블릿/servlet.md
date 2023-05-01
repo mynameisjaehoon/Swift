@@ -1,12 +1,13 @@
 # 서블릿
 
-![Untitled](./images/Untitled.png)
+<img src="./images/Untitled.png" width="75%">
 
 이름과 나이를 입력해서 전송하면 회원 가입이 되는 폼을 전달한다고 가정해봅시다.
 
 폼의 action은 /save에 전송되고, POST 메서드를 사용했다고 하자. 그러면 웹 브라우저가 HTTP 메세지를 다음과 같이 작성하고 username=kim%age=20으로 데이터를 전송하고, Content-type: application/xwww-form-urlencoded 이다.
 
-![Untitled](./images/Untitled%201.png)
+<img src="./images/Untitled%201.png" width="40%">
+
 
 비즈니스 로직은 HTTP 메세지를 풀어서 데이터를 받고 데이터베이스에 저장요청하는 것이 끝이다. 그래서 서블릿이라는게 나왔다.
 
@@ -25,7 +26,7 @@ HTTP의 기본적인 스펙을 알고 사용하면 좋겠지요~
 
 ## HTTP 요청, 응답 흐름
 
-![Untitled](./images/Untitled%202.png)
+<img src="./images/Untitled%202.png" width="80%">
 
 - 웹 브라우저에 요청하면 WAS 서버에서 요청 메세지를 기반으로 request, response 객체를 새로 만든다.
 - request, response 매개변수를 넣어준 helloServlet이라는 것을 실행해준다.
