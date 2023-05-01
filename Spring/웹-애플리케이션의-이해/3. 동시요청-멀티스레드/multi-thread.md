@@ -2,7 +2,7 @@
 
 백엔드 개발자는 이 개념이 진짜 중요하다. 이걸 모르면 트래픽이 많을 때 대처하지 못하게 된다.
 
-<img src="./image/Untitled.png" width="80%">
+<img src="./image/Untitled.png" width="65%">
 
 클라이언트가 요청하면 TCP/IP커넥션이 연결되고, 서블릿을 호출해준다. 그런데 이 서블릿이라는 것을 도대체 누가 호출해줄까? 바로 쓰레드가 호출한다.
 
@@ -17,7 +17,7 @@
 
 ### 단일요청 - 쓰레드 하나 사용
 
-<img src="./image/Untitled%201.png" width="80%">
+<img src="./image/Untitled%201.png" width="65%">
 
 요청이 오면 쓰레드를 할당해주고, 쓰레드가 서블릿을 호출해준다.
 
@@ -25,7 +25,7 @@
 
 ### 다중요청 - 쓰레드 하나 사용
 
-<img src="./image/Untitled%202.png" width="80%">
+<img src="./image/Untitled%202.png" width="65%">
 
 첫번째 요청이 서블릿을 요청하다가 처리가 지연되었다. 이럴 때 요청 2번이 들어왔다고 가정해보자. 그러면 쓰레드를 사용하기 위해서 요청2는 대기하게 된다. 이러면 두개의 요청이 둘다 죽는 문제가 발생한다.
 
@@ -48,7 +48,7 @@
 
 ## 쓰레드 풀
 
-<img src="./image/Untitled%203.png" width="80%">
+<img src="./image/Untitled%203.png" width="65%">
 
 Pool 안에 쓰레드를 미리 만들어 두고 가져다쓴다. 다 사용하면 쓰레드 풀에 쓰레드를 반납한다.
 
