@@ -81,7 +81,7 @@
         - [Stable Sort란?](./cs/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/sort/stable-sort.md)
         - [Merge Sort](./cs/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/sort/merge-sort.md)
 
-## 질문형
+## CS 질문형
 - [자료구조](./cs/question/data-structure.md)
 - [운영체제](./cs/question/os.md)
 - [데이터베이스](./cs/question/db.md)
