@@ -5,18 +5,7 @@
 - [동시요청 - 멀티쓰레드](./Spring/%EC%9B%B9-%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%EC%9D%98-%EC%9D%B4%ED%95%B4/3.%20%EB%8F%99%EC%8B%9C%EC%9A%94%EC%B2%AD-%EB%A9%80%ED%8B%B0%EC%8A%A4%EB%A0%88%EB%93%9C/multi-thread.md)
 - [HTML, HTTP API, CSR, SSR](./Spring/%EC%9B%B9-%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%EC%9D%98-%EC%9D%B4%ED%95%B4/4.%20HTML-HTTP_API-CSR-SSR/html-httpapi-csr-ssr.md)
 
-## iOS
-- [iOS앱 번들](./iOS/app-bundle.md)
-- [샌드박스 방식](./iOS/sandbox.md)
-- [App/Scene 라이프사이클](./iOS/app-scene-lifecycle.md)
-- [코어데이터](./iOS/coredata.md)
-- [Code, Data, Stack, Heap](./iOS/code-data-stack-heap.md)
-- [반응형 프로그래밍이란?](./iOS/reactive-programming.md)
-- [required init?(coder: NSCoder)](./iOS/nscoder.md)
-- 애니메이션
-    - [UIView 애니메이션](./iOS/animation/uiview-animation.md)
-    - [Core Animation]()
-    - [UIViewPropertyAnimator]()
+
 
 ## Swift Languages
 - [map, compactMap, flatMap](./swift-language/map_compactMap.md)
@@ -92,9 +81,28 @@
         - [Stable Sort란?](./cs/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/sort/stable-sort.md)
         - [Merge Sort](./cs/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/sort/merge-sort.md)
 
+## 질문형
+- [자료구조](./cs/question/data-structure.md)
+- [운영체제](./cs/question/os.md)
+- [데이터베이스](./cs/question/db.md)
+- [네트워크](./cs/question/network.md)
+
 ## PS
 - [프로그래머스](./PS/Programmers.md)
 - [백준](./PS/BOJ.md)
+
+## iOS
+- [iOS앱 번들](./iOS/app-bundle.md)
+- [샌드박스 방식](./iOS/sandbox.md)
+- [App/Scene 라이프사이클](./iOS/app-scene-lifecycle.md)
+- [코어데이터](./iOS/coredata.md)
+- [Code, Data, Stack, Heap](./iOS/code-data-stack-heap.md)
+- [반응형 프로그래밍이란?](./iOS/reactive-programming.md)
+- [required init?(coder: NSCoder)](./iOS/nscoder.md)
+- 애니메이션
+    - [UIView 애니메이션](./iOS/animation/uiview-animation.md)
+    - [Core Animation]()
+    - [UIViewPropertyAnimator]()
 
 ## CS - Deep Dive
 > **질문출처**: [VSFe/Tech-Interview](https://github.com/VSFe/Tech-Interview)
